@@ -8,12 +8,8 @@ class List extends React.Component {
   state = {
     list : [],
     word : "",
-<<<<<<< Updated upstream
-    error: ""
-=======
     error: "",
     wordLimit: 10
->>>>>>> Stashed changes
   }
 
   changeHandler(event){
@@ -24,29 +20,12 @@ class List extends React.Component {
     else{
     this.setState({word:event.target.value});
     console.log("change", event.target.value);
-<<<<<<< Updated upstream
-=======
   }
->>>>>>> Stashed changes
-    //creates a length validation on the input
-  }
+}
   //takes what is in the input; removes it and push it into the list
   clickHandler(event){
-<<<<<<< Updated upstream
-    if( this.state.word <= 5 ){
-      this.setState({error:"input too short"});
-      console.log(this.state.error);
-    }
-    else{
       this.setState({list:[...this.state.list, this.state.word]});
       console.log(this.state.list);
-    }
-=======
-
-      this.setState({list:[...this.state.list, this.state.word]});
-      console.log(this.state.list);
-
->>>>>>> Stashed changes
   }
 
   render() {
